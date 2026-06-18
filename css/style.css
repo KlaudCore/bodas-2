@@ -42,7 +42,7 @@ html{
 
     inset:0;
 
-    background-image:url('novios.webp');
+    background-image:url('/images/novios.webp');
     background-size:cover;
     background-position:center 15%;
     background-repeat:no-repeat;
@@ -215,7 +215,7 @@ small{
     position:absolute;
     inset:0;
 
-    background-image:url('contador.webp');
+    background-image:url('/images/contador.webp');
 
     background-size:cover;
     background-position:center;
