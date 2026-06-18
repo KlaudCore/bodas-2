@@ -1,0 +1,363 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:'Cormorant Garamond',serif}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000000;
+    overflow-x:hidden;
+    color:#fff;
+    font-family:'Cormorant Garamond',serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+/* ===================================
+   HERO / PORTADA
+=================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Imagen */
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:url('novios.webp');
+    background-size:cover;
+    background-position:center 15%;
+    background-repeat:no-repeat;
+
+    filter:
+        brightness(1.15)
+        contrast(1.05);
+
+    z-index:0;
+}
+/* Degradado elegante */
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+
+        rgba(0,0,0,.05) 0%,
+        rgba(0,0,0,.85) 90%,
+        rgba(0,0,0,1) 100%
+    );
+
+    z-index:1;
+}
+
+/* Marco */
+
+.frame{
+
+    position:absolute;
+
+    top:25px;
+    left:20px;
+    right:20px;
+    bottom:25px;
+
+    border:1px solid rgba(216,193,150,.65);
+
+    border-radius:30px;
+
+    z-index:3;
+}
+
+/* Contenido */
+
+.content{
+
+    position:relative;
+
+    z-index:4;
+
+    text-align:center;
+
+    padding:30px;
+}
+
+.subtitle{
+
+    font-size:1.6rem;
+
+    margin-bottom:10px;
+}
+
+h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:4rem;
+
+    font-weight:400;
+
+    margin-bottom:25px;
+}
+
+.date{
+
+    font-size:1.3rem;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+}
+
+.hour{
+
+    font-size:1.4rem;
+
+    margin-bottom:25px;
+}
+
+.place{
+
+    font-size:1.2rem;
+
+    line-height:1.7;
+}
+
+.place span{
+
+    display:block;
+
+    font-size:1rem;
+
+    opacity:.9;
+}
+
+.scroll-indicator{
+
+    font-size:2rem;
+
+    margin-top:60px;
+
+    animation:float 2s infinite;
+}
+
+small{
+
+    display:block;
+
+    margin-top:10px;
+
+    opacity:.8;
+}
+
+/* Animación flecha */
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(10px);
+    }
+}
+
+/* ===================================
+   CUENTA REGRESIVA
+=================================== */
+
+.countdown-screen{
+
+    min-height:100vh;
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px 25px;
+}
+
+/* Imagen de fondo */
+
+.countdown-screen::before{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background-image:url('contador.webp');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    z-index:0;
+}
+
+/* Degradado oscuro */
+
+.countdown-screen::after{
+
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.90)
+    );
+
+    z-index:1;
+}
+
+/* Contenido encima */
+
+.countdown-content{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+    max-width:420px;
+
+    text-align:center;
+}
+.overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,.00)
+        rgba(0,0,0,.35)
+    );
+
+    z-index:1;
+}
+.frame{position:absolute;top:25px;left:20px;right:20px;bottom:25px;border:1px solid rgba(216,193,150,.7);border-radius:30px;z-index:2}
+.content{position:relative;z-index:3;text-align:center;padding:30px}
+.subtitle{font-size:1.6rem;margin-bottom:10px}
+h1{font-family:'Great Vibes',cursive;font-size:4rem;font-weight:400;margin-bottom:25px}
+.date{font-size:1.3rem;letter-spacing:2px;margin-bottom:15px}
+.hour{font-size:1.4rem;margin-bottom:25px}
+.place{font-size:1.2rem;line-height:1.7}
+.place span{display:block;font-size:1rem;opacity:.9}
+.scroll-indicator{font-size:2rem;margin-top:60px}
+small{display:block;margin-top:10px;opacity:.8}
+
+.countdown-screen{min-height:100vh;background:#08110b;padding:40px 25px;display:flex;align-items:center;justify-content:center}
+.countdown-content{width:100%;max-width:420px;text-align:center}
+.countdown-title{margin-bottom:40px}
+.counter{display:flex;flex-direction:column;gap:16px}
+.counter-box{height:90px;border:1px solid rgba(200,170,120,.35);border-radius:18px;background:rgba(255,255,255,.03);display:flex;align-items:center;justify-content:center;gap:20px}
+.counter-box span{font-size:3rem;min-width:90px}
+.footer-message{margin-top:40px}
+
+.bottom-nav{
+
+    position:fixed;
+
+    bottom:0;
+    left:0;
+
+    width:100%;
+
+    height:75px;
+
+    display:flex;
+
+    justify-content:space-around;
+    align-items:center;
+
+    background:
+    rgba(0,0,0,.85);
+
+    backdrop-filter:blur(15px);
+
+    -webkit-backdrop-filter:blur(15px);
+
+    border-top:
+    1px solid rgba(216,193,150,.20);
+
+    z-index:9999;
+}
+
+.nav-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    color:#d8c196;
+
+    gap:4px;
+
+    transition:.3s;
+}
+
+.nav-item .icon{
+
+    font-size:1.3rem;
+}
+
+.nav-item .label{
+
+    font-size:.75rem;
+
+    letter-spacing:.5px;
+}
+
+.nav-item:hover{
+
+    transform:translateY(-2px);
+
+    color:#fff;
+}
+
+.nav-item.active{
+
+    color:#fff;
+}

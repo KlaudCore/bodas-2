@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Confirmar Asistencia</title>
+
+<link rel="stylesheet" href="css/confirmar.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="confirm-container">
+
+    <header class="confirm-header">
+
+        <h1>Confirma<br>tu asistencia</h1>
+
+        <div class="heart">♡</div>
+
+    </header>
+
+    <section class="guest-info">
+
+        <h2>Hola, Carlos 👋</h2>
+
+        <p>Tu mesa asignada es la <strong>#12</strong></p>
+
+        <p>Acompañantes permitidos: <strong>2</strong></p>
+
+    </section>
+
+    <section class="attendance-section">
+
+        <h3>¿Asistirás?</h3>
+
+        <div class="attendance-buttons">
+
+            <button class="attendance-btn active" id="btn-si">
+                SÍ, ASISTIRÉ
+            </button>
+
+            <button class="attendance-btn" id="btn-no">
+                NO PODRÉ ASISTIR
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="companions-section">
+
+        <h3>Acompañantes</h3>
+
+        <div class="companions-options">
+
+            <button class="companion selected">
+                1
+            </button>
+
+            <button class="companion">
+                2
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="menu-section">
+
+        <h3>Menú</h3>
+
+        <select id="menu">
+
+            <option value="">
+                Selecciona una opción
+            </option>
+
+            <option>Pollo</option>
+
+            <option>Res</option>
+
+            <option>Vegetariano</option>
+
+            <option>Vegano</option>
+
+        </select>
+
+    </section>
+
+    <section class="dietary-section">
+
+        <h3>Restricciones alimentarias</h3>
+
+        <textarea
+            id="diet"
+            placeholder="Escribe aquí"></textarea>
+
+    </section>
+
+    <section id="extra-actions" class="extra-actions">
+
+        <a href="calendario.html" class="action-card">
+
+            📅
+
+            <span>Agregar al Calendario</span>
+
+        </a>
+
+        <a href="qr.html" class="action-card">
+
+            🎟️
+
+            <span>Ver Pase QR</span>
+
+        </a>
+
+    </section>
+
+</div>
+
+<nav class="bottom-nav">
+
+    <a href="index.html">
+        <span>🏠</span>
+        Inicio
+    </a>
+
+    <a href="historia.html">
+        <span>♡</span>
+        Historia
+    </a>
+
+    <a href="detalles.html">
+        <span>ⓘ</span>
+        Detalles
+    </a>
+
+    <a href="confirmar.html" class="active">
+        <span>☑</span>
+        Confirmar
+    </a>
+
+</nav>
+
+<script src="js/confirmar.js"></script>
+
+</body>
+</html>

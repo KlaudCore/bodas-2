@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:
+        linear-gradient(
+            rgba(114,113,113,.50),
+            rgba(0,0,0,.90)
+        ),
+        url("../images/hojasb.webp"),
+        url("../images/calendario.webp");
+
+    background-size:
+        cover,
+        cover,
+        cover;
+
+    background-position:
+        center,
+        center,
+        center;
+
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat;
+
+    color:white;
+
+    font-family:'Cormorant Garamond',serif;
+}
+
+.calendar-page{
+
+    position:relative;
+
+    max-width:500px;
+
+    margin:auto;
+
+    padding:70px 25px;
+}
+
+h1{
+
+    text-align:center;
+
+    font-size:3rem;
+
+    line-height:1.2;
+}
+
+.heart{
+
+    text-align:center;
+
+    color:#d8c196;
+
+    font-size:1.6rem;
+
+    margin:15px 0;
+}
+
+.subtitle{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    font-size:1.2rem;
+}
+
+.calendar-buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.calendar-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(216,193,150,.15);
+
+    transition:.3s;
+}
+
+.calendar-card:hover{
+
+    transform:translateY(-2px);
+
+    background:rgba(255,255,255,.12);
+}
+
+.next-btn{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:35px;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:linear-gradient(
+        90deg,
+        #0c3428,
+        #1f5b48
+    );
+
+    transition:.3s;
+}
+
+.next-btn:hover{
+
+    transform:translateY(-2px);
+}
